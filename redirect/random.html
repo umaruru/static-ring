@@ -1,0 +1,47 @@
+---
+permalink: redirect/random/index.html
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random - Webring</title>
+    
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            
+            margin-top: 10%;
+            margin-top: 10vh;
+            
+            background-color: #1f2020;
+            color: #ddd;
+        }
+
+        a, a:visited { color: #69aceb; }
+        a:hover, a:active { color: #f3f0c0; }
+    </style>
+</head>
+<body>
+    <h1>Random</h1>
+    <h2 id="h2Link"></h2>
+
+    <noscript>
+        <p>Your browser doesn't support javascript or it's deactivated.</p>
+        <p><a href="../../directory">Go to the webring's directory.</a></p>
+    </noscript>
+
+    <h3>Webring</h3>
+
+    <script type="text/javascript">
+        const urls = {{ enabledSites | getSitesUrls | dump | safe }};
+        const chosenIdx = Math.floor(Math.random() * urls.length);
+        document.location.replace(urls[chosenIdx]);
+        
+        const h2Link = document.getElementById("h2Link");
+        h2Link.innerHTML = '<a href="' + urls[chosenIdx] + '">click here</a> if you were not redirected automatically.';
+    </script>
+</body>
+</html>

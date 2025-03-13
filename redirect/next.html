@@ -1,0 +1,18 @@
+---
+pagination:
+    data: enabledSites
+    size: 1
+    alias: site
+eleventyComputed:
+    permalink: "redirect/next/{{ site.id }}.html"
+---
+
+{% set direction = "next" %}
+
+{% if site === pagination.page.last %}
+    {% set target = pagination.page.first %}
+{% else %}
+    {% set target = pagination.page.next %}
+{% endif %}
+
+{% extends "redirect.html" %}

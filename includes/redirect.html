@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta http-equiv="Refresh" content="0; url='{{ target.url }}'" /> -->
+    <link rel="canonical" href="{{ target.url }}" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>redirecting... - Webring</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 10%;
+            background-color: #1f2020;
+            color: #ddd;
+        }
+        a, a:visited { color: #69aceb; }
+        a:hover, a:active { color: #f3f0c0; }
+    </style>
+</head>
+<body>
+    <h1>{{ target.name }}</h1>
+    <p>{{ target.description }}</p>
+    <h2>If you were not redirected automatically, <a href="{{ target.url }}">go to the {{ direction }} site.</a></h2>
+    <h3>Webring</h3>
+    <p>current {{ site.name }} - target {{ target.name }}</p>
+</body>
+</html>
