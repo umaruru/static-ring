@@ -76,4 +76,11 @@ export default [
         added: "2022-03-15",
         description: "That's enough pages, isn't it?",
     },
+    {
+        id: "branches",
+        name: "Branches???",
+        url: "http://localhost:8080/test_pages/branches/",
+        added: "2022-03-15",
+        description: "Branches are so confusing.",
+    },
 ]
