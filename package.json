@@ -1,4 +1,9 @@
 {
+	"name": "static-ring",
+	"version": "0.1.0",
+	"description": "A webring system that doesn't need a server to work. It can be hosted anywhere that supports html.",
+	"homepage": "https://github.com/umaruru/static-ring",
+	"license": "MIT",
 	"type": "module",
 	"dependencies": {
 		"@11ty/eleventy": "^3.0.0"
