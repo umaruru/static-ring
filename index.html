@@ -1,1 +1,45 @@
-what if I make changes here directly?
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webring test</title>
+    <style>
+        body { font-family: sans-serif; border-spacing: collapse;}
+        td, th {
+            /* border: 1px solid rgba(0, 0, 0, 0.15); */
+            padding: 0.3em;
+        }
+        thead, tr:nth-child(even) { background-color: rgba(0, 0, 0, 0.11);}
+    </style>
+</head>
+<body>
+    <h1>Webring test</h1>
+    
+    <h2>Participating websites:</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Site name</th>
+                <th>Address</th>
+                <th>ID</th>
+                <th>Description</th>
+                <th>Added</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for site in sites %}
+            <tr>
+                <td>{{ site.name }}</td>
+                <td><a href="{{ site.url }}">{{ site.url }}</a></td>
+                <td>{{ site.id }}</td>
+                <td>{{ site.description }}</td>
+                <td>{{ site.added }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
+>>>>>>> 0487cad (add index page)
