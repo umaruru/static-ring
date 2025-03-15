@@ -3,6 +3,7 @@ import sites from "./sites.js";
 export const config = {
     dir: {
         includes: "includes",
+        output: "../site/webring_test",
     },
 
     markdownTemplateEngine: "njk",
