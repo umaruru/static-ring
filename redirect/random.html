@@ -30,13 +30,13 @@ permalink: redirect/random/index.html
 
     <noscript>
         <p>Your browser doesn't support javascript or it's deactivated.</p>
-        <p><a href="../../directory">Go to the webring's directory.</a></p>
+        <p><a href="../../">Go to the webring's homepage.</a></p>
     </noscript>
 
     <h3>Webring</h3>
 
     <script type="text/javascript">
-        const urls = {{ enabledSites | getSitesUrls | dump | safe }};
+        const urls = {{ sites | getSitesUrls | dump | safe }};
         const chosenIdx = Math.floor(Math.random() * urls.length);
         document.location.replace(urls[chosenIdx]);
         
