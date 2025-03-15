@@ -7,19 +7,69 @@
     <style>
         body {
             font-family: sans-serif;
-            border-spacing: collapse;
+            line-height: 1.5;
+            background-color: #289f93;
+            color: #333;
         }
+
+        #wrapper {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        .round-box {
+            background-color: #eee;
+            border-radius: 16px;
+            padding: 1em;
+            margin: 2em auto;
+        }
+
         td, th {
             padding: 0.3em;
         }
+
         thead, tr:nth-child(even) {
             background-color: rgba(0, 0, 0, 0.11);
         }
     </style>
 </head>
 <body>
-    <h1>Webring test</h1>
+<div id="wrapper">
+
+    <h1>test webring</h1>
     
+<div class="round-box">
+    <h2>Information</h2>
+
+    <p>These pages show <a href="https://github.com/umaruru/static-ring" target="_blank"><code>static-ring</code></a> in action.</p>
+
+    <p>
+        <code>static-ring</code> is a webring system that doesn't need a server to work.
+        It can be hosted anywhere that supports html.
+    </p>
+
+    <p>
+        It uses the html tag <code>&lt;meta http-equiv="Refresh" ...&gt;</code>
+        and javascript to redirect to the next page. A fallback link is present in case it doesn't work.
+    </p>
+
+    <p>
+        It's built with <a href="https://www.11ty.dev" target="_blank">eleventy</a> and it's fairly simple.
+        You add the sites to the <code>sites.js</code> file and eleventy takes care of the rest.
+    </p>
+
+    <p>
+        You can find the source code and instructions at
+        <a href="https://github.com/umaruru/static-ring" target="_blank">https://github.com/umaruru/static-ring</a> .
+    </p>
+</div>
+
+<div class="round-box">
     <h2>List of websites:</h2>
 
     <table>
@@ -44,5 +94,10 @@
             {% endfor %}
         </tbody>
     </table>
+</div>
+
+    <p class="round-box" style="text-align: center;">Made by <a href="https://umaruru.neocities.org/">umaruru</a></p>
+
+</div>
 </body>
 </html>
