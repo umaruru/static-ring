@@ -31,7 +31,12 @@
         }
 
         td, th {
-            padding: 0.3em;
+            padding: 0.25em 0.5em;
+        }
+
+        td.site-url {
+            overflow-x: auto;
+            max-width: 300px;
         }
 
         thead, tr:nth-child(even) {
@@ -87,7 +92,7 @@
             {% for site in sites %}
             <tr>
                 <td>{{ site.name }}</td>
-                <td><a href="{{ site.url }}">{{ site.url }}</a></td>
+                <td class="site-url"><a href="{{ site.url }}">{{ site.url }}</a></td>
                 <td>{{ site.id }}</td>
                 <td>{{ site.description }}</td>
                 <td>{{ site.added }}</td>
