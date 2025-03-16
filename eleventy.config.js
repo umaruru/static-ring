@@ -1,10 +1,6 @@
 import sites from "./sites.js";
 
 export const config = {
-    dir: {
-        includes: "includes",
-    },
-
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
 };
