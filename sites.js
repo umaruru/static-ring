@@ -83,4 +83,11 @@ export default [
         added: "2025-03-15",
         description: "Branches are so confusing.",
     },
+    {
+        id: "ability",
+        name: "Ability",
+        url: "https://umaruru.neocities.org/webring_test/test_pages/ability/",
+        added: "2025-03-16",
+        description: "Look what I can do",
+    },
 ]
