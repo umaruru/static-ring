@@ -38,7 +38,7 @@ I couldn't think of a way to mitigate this problem.
 
 ### Caching
 
-When a browser downloads something from the web, it usually caches the concent so it doesn't have to
+When a browser downloads something from the web, it usually caches the content so it doesn't have to
 be downloaded again. This can make the browser skip the updated file and use the cached one instead,
 potentially redirecting the user to a removed site from the webring.
 
