@@ -90,4 +90,11 @@ export default [
         added: "2025-03-16",
         description: "Look what I can do",
     },
+    {
+        id: "tijolophone",
+        name: "Tijolophone",
+        url: "https://umaruru.neocities.org/webring_test/test_pages/tijolophone/",
+        added: "2025-03-31",
+        description: "Me liga amiga, eu quero fugir daqui.",
+    },
 ]
